@@ -3,7 +3,19 @@
 }
 
 /*temporary styles to make it easier on the eyes while developing! */
-body {
+.header {
   background-color: #5e5e5e;
   color: white;
+  height: 10vh;
+  padding: 4%;
+  text-transform: uppercase;
 }
+
+.header  h1 {margin-top: 0px;}
+.header h4 {color: #f2a828;}
+
+.main-content {
+  background-color: #bfbfbf;
+  height: 90vh;
+}
+

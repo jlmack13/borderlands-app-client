@@ -19,7 +19,26 @@ const lootsplosion = [
         region: 'The Highlands',
         location: 'The Bunker',
         drop: 'BNK3R'
-    }
+    },
+    {
+        id: 3,
+        type: 'Shield',
+        subtype: '',
+        name: 'The Bee',
+        region: 'Arid Nexus',
+        location: 'Boneyard',
+        drop: 'Hunter Hellquist'
+    },
+    {
+        id: 4,
+        type: 'Grenade',
+        subtype: '',
+        name: 'Bonus Package',
+        region: 'Southern Shelf',
+        location: '',
+        drop: 'Boom & Bewm'
+    },
+
 ]
 
 class LootListContainer extends React.Component {
@@ -33,9 +52,10 @@ class LootListContainer extends React.Component {
     }
 
     //temporary until API is up and running then will need to put the fetch here
-    componentDidMount() {
-        this.setState( {lootsplosion} );
-    }
+    //THIS IS UNNECESSARY AS I'M JUST PASSING LOOTSPLOSION
+    // componentDidMount() {
+    //     this.setState( {lootsplosion} );
+    // }
 
     render() {
         return (<LootList lootList={lootsplosion} />)

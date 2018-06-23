@@ -1,0 +1,7 @@
+.loot {
+    border: black 2px solid;
+    width: 20vw;
+    background-color: rgb(169, 207, 202);
+    margin: 2%;
+    padding: 2%;
+}

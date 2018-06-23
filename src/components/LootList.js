@@ -1,5 +1,6 @@
 import React from 'react';
 import Loot from './Loot';
+import './LootList.css'
 
 
 const LootList = ({ lootList }) => (

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Loot.css';
 
 const Loot = ( {id, name, type, drop} ) => {
     return (

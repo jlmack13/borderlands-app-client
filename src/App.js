@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Loot from './components/Loot';
-import LootList from './components/LootList';
+import LootListContainer from './containers/LootListContainer';
 
-let lootsplosion = [
-  {
-    type: 'weapon',
-    subtype: 'SMG',
-    name: 'The Bitch',
-    region: 'The Highlands',
-    location: 'The Bunker',
-    drop: 'BNK3R'
-  }
-]
+
 
 class App extends Component {
   render() {
@@ -27,7 +17,7 @@ class App extends Component {
 
         {/* Body of App */}
         <div className="main-content">
-          <LootList lootList={lootsplosion}/>
+          <LootListContainer />
         </div>
         
       </div>

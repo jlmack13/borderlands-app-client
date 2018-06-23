@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const Loot = ( name, type, drop ) => {
+const Loot = ( {id, name, type, drop} ) => {
     return (
         <div className="loot">
-            <p>Name: {loot.name}</p><br />
-            <p>Type: {loot.type}</p><br />
-            <p>Dropped By: {loot.drop}</p><br />
+            <p>Name: {name}</p>
+            <p>Type: {type}</p>
+            <p>Dropped By: {drop}</p>
         </div>
     )
 }

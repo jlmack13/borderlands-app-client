@@ -6,7 +6,7 @@
 .header {
   background-color: #5e5e5e;
   color: white;
-  height: 10vh;
+  height: 10%;
   padding: 4%;
   text-transform: uppercase;
 }
@@ -16,6 +16,6 @@
 
 .main-content {
   background-color: #bfbfbf;
-  height: 90vh;
+  height: 90%;
 }
 

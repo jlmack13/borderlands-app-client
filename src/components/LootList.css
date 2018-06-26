@@ -1,4 +1,6 @@
 .loot-list {
     padding-top: 2%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

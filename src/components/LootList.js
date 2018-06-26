@@ -6,7 +6,7 @@ import './LootList.css'
 const LootList = ({ lootList }) => (
   <div className="loot-list">
     {lootList.map( loot => 
-        <Loot key={loot.id} name={loot.name} type={loot.type} drop={loot.drop} />
+        <Loot key={loot.id} name={loot.name} item_type={loot.item_type} drop={loot.drop} />
     )}
   </div>
 )

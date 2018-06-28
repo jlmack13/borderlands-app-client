@@ -13,8 +13,6 @@ class LootListContainer extends React.Component {
         };
     }
 
-    //temporary until API is up and running then will need to put the fetch here
-    //THIS IS UNNECESSARY AS I'M JUST PASSING LOOTSPLOSION
     componentDidMount() {
         fetch(`${API_URL}/loots`)
             .then(response => response.json())

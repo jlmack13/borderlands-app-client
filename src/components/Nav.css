@@ -1,0 +1,13 @@
+.nav {
+    margin: 0 auto;
+}
+
+.menu-item {
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(146, 133, 233);
+    border-radius: 5px;
+    background-color: slateblue;
+    padding: 1rem;
+    margin: 2rem;
+}

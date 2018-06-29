@@ -1,0 +1,24 @@
+.has-sub:hover #sub-items {
+    display: block;
+}
+
+.has-sub #sub-items {
+    display: none;
+    position: absolute;
+    margin-top: 55px;
+    background-color: #333536;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.has-sub #sub-items a {
+    padding: 2px 6px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #222324;
+}
+
+.has-sub #sub-items a:hover {
+    background-color: #595959;
+}

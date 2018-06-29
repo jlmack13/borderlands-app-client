@@ -3,11 +3,12 @@
 }
 
 .menu-item {
-    color: black;
-    font-weight: bold;
+    font-family: 'Oswald';
+    font-size: 1.25rem;
+    color: ghostwhite;
     border: 1px solid rgb(146, 133, 233);
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: slateblue;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 2rem;
 }

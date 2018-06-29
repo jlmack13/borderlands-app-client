@@ -22,8 +22,17 @@ class AddLoot extends Component {
     }
 
     //Handle on Submit Method
-    handleOnSubmit() {
-
+    handleOnSubmit = event => {
+        event.preventDefault();
+        const loot = this.state;
+        this.props.addLoot(loot);
+        this.setState({
+            name: '',
+            item_type: '',
+            manufacturer: '',
+            location: '',
+            drop: ''
+        })
     }
     render() {
         return (

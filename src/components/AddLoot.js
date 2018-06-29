@@ -13,6 +13,18 @@ class AddLoot extends Component {
         }
     }
 
+    //Handle On Change Method
+    handleChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        })
+    }
+
+    //Handle on Submit Method
+    handleOnSubmit() {
+
+    }
     render() {
         return (
             <form onSubmit={this.handleOnSubmit}>
@@ -65,7 +77,11 @@ class AddLoot extends Component {
                     onChange={this.handleChange}
                     placeholder="Dropped By"
                 />
+
+                <button>Add Loot</button>
             </form>
         )
     }
 }
+
+export default AddLoot;

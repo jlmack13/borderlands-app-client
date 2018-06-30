@@ -6,3 +6,10 @@
     display: flex;
     justify-content: center;
 }
+
+.nav-item {
+    margin: 30px;
+    list-style-type: none;
+    padding: 30px;
+    background-color: #61B9C8;
+}

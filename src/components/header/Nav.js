@@ -10,7 +10,8 @@ const Nav = () => {
             <ul className="nav-group">
                 <NavItem name="Story Mode" />
                 <NavItem name="About"/>
-                <Dropdown name="Manufacturer" sub_items={["Maliwan", "Anshin", "Bandit"]} />
+                <Dropdown name="Manufacturer" sub_items={["Anshin", "Bandit", "Dahl", "Hyperion", "Jakobs", "Maliwan", "Pangolin", "Tediore", "Torgue", "Vladof"]} />
+                <Dropdown name="Item Type" sub_items={["Assault Rifle", "Class Mod", "Grenade Mod", "Pistol", "Shield", "Shotgun", "Sniper Rifle", "Submachine Gun", "Relic" , "Repeater Pistol", "Rocket Launcher"]} />
             </ul>
         </div>
     )

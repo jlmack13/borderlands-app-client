@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
-import Dropdown from './Dropdown';
+// import Dropdown from './Dropdown';
 
 
 const Nav = () => {
@@ -11,8 +11,8 @@ const Nav = () => {
                 <NavLink to="/" exact activeStyle={{background: '#434E7B'}}>Home</NavLink>
                 <NavLink to="/about" exact activeStyle={{background: '#434E7B'}}>About</NavLink>
                 <NavLink to="/storymode" exact activeStyle={{background: '#434E7B'}}>Story Mode</NavLink>
-                <Dropdown name="Manufacturer" sub_items={["Anshin", "Bandit", "Dahl", "Hyperion", "Jakobs", "Maliwan", "Pangolin", "Tediore", "Torgue", "Vladof"]} />
-                <Dropdown name="Item Type" sub_items={["Assault Rifle", "Class Mod", "Grenade Mod", "Pistol", "Shield", "Shotgun", "Sniper Rifle", "Submachine Gun", "Relic" , "Repeater Pistol", "Rocket Launcher"]} />
+                {/* <Dropdown name="Manufacturer" sub_items={["Anshin", "Bandit", "Dahl", "Hyperion", "Jakobs", "Maliwan", "Pangolin", "Tediore", "Torgue", "Vladof"]} />
+                <Dropdown name="Item Type" sub_items={["Assault Rifle", "Class Mod", "Grenade Mod", "Pistol", "Shield", "Shotgun", "Sniper Rifle", "Submachine Gun", "Relic" , "Repeater Pistol", "Rocket Launcher"]} /> */}
             </ul>
         </div>
     )

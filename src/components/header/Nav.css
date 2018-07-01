@@ -1,10 +1,25 @@
 .nav {
     margin: 0 auto;
+    background-color: #5e5e5e;
 }
 
 .nav-group {
     display: flex;
+    margin: 0 auto;
     justify-content: center;
+    align-items: center;
+}
+
+.nav-group > a {
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #61B9C8;
+    font: 18px 'Oswald';
+    color: white;
+    text-transform: uppercase;
+
 }
 
 .nav-item {

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import "typeface-oswald";
+import "typeface-roboto";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

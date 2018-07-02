@@ -1,0 +1,9 @@
+.add-loot {
+    padding: 2%;
+    background-color: thistle;
+    font-family: 'Roboto';
+}
+
+.add-loot-form label {
+    margin: 10px;
+}

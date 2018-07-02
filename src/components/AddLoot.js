@@ -1,4 +1,7 @@
 import React,  { Component } from 'react';
+import './AddLoot.css'
+
+const toggleStatus = ""
 
 class AddLoot extends Component {
     constructor(props) {
@@ -34,61 +37,72 @@ class AddLoot extends Component {
             drop: ''
         })
     }
+
+    //Toggle Form for Adding New Loot
+    toggleAddLoot = () => {
+
+    }
+
+    
     render() {
         return (
-            <form onSubmit={this.handleOnSubmit}>
-                {/* Name */}
-                <label htmlFor="name">Name:</label>
-                <input 
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    placeholder="Name"
-                />
+            <div className="add-loot">
+                <a className="toggle-add-loot-btn" onClick="toggleAddLoot">{toggleStatus}</a>
+                <form className="add-loot-form" onSubmit={this.handleOnSubmit}>
+                    <h1>Add Loot</h1>
+                    {/* Name */}
+                    <label htmlFor="name">Name:</label>
+                    <input 
+                        type="text"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                        placeholder="Name"
+                    />
 
-                { /* Item Type */ }
-                <label htmlFor="item_type">Item Type:</label>
-                <input 
-                    type="text"
-                    name="item_type"
-                    value={this.state.item_type}
-                    onChange={this.handleChange}
-                    placeholder="Item Type"
-                />
+                    { /* Item Type */ }
+                    <label htmlFor="item_type">Item Type:</label>
+                    <input 
+                        type="text"
+                        name="item_type"
+                        value={this.state.item_type}
+                        onChange={this.handleChange}
+                        placeholder="Item Type"
+                    />
 
-                { /* Manufactuer */ }
-                <label htmlFor="manufactuer">Manufacturer:</label>
-                <input 
-                    type="text"
-                    name="manufacturer"
-                    value={this.state.manufacturer}
-                    onChange={this.handleChange}
-                    placeholder="Manufacturer"
-                />
+                    { /* Manufactuer */ }
+                    <label htmlFor="manufactuer">Manufacturer:</label>
+                    <input 
+                        type="text"
+                        name="manufacturer"
+                        value={this.state.manufacturer}
+                        onChange={this.handleChange}
+                        placeholder="Manufacturer"
+                    />
 
-                { /* Location */ }
-                <label htmlFor="location">Location:</label>
-                <input 
-                    type="text"
-                    name="location"
-                    value={this.state.location}
-                    onChange={this.handleChange}
-                    placeholder="Location"
-                />
+                    { /* Location */ }
+                    <label htmlFor="location">Location:</label>
+                    <input 
+                        type="text"
+                        name="location"
+                        value={this.state.location}
+                        onChange={this.handleChange}
+                        placeholder="Location"
+                    />
 
-                { /* Dropped By */ }
-                <label htmlFor="drop">Dropped By:</label>
-                <input 
-                    type="text"
-                    name="drop"
-                    value={this.state.drop}
-                    onChange={this.handleChange}
-                    placeholder="Dropped By"
-                />
+                    { /* Dropped By */ }
+                    <label htmlFor="drop">Dropped By:</label>
+                    <input 
+                        type="text"
+                        name="drop"
+                        value={this.state.drop}
+                        onChange={this.handleChange}
+                        placeholder="Dropped By"
+                    />
 
-                <button>Add Loot</button>
-            </form>
+                    <button>Add Loot</button>
+                </form>
+            </div>
         )
     }
 }

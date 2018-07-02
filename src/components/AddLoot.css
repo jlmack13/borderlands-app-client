@@ -7,3 +7,11 @@
 .add-loot-form label {
     margin: 10px;
 }
+
+.toggle-add-loot-btn {
+    padding: 1% 2%;
+    background-color: teal;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font: bold 12px 'Roboto';
+}

@@ -22,7 +22,7 @@ class StoryModeContainer extends React.Component {
     render() {
         return (
             <div className="loot-container">
-                <LootList lootList={this.state.loot} />
+                <LootList lootList={this.state.loot} story_mode={true}/>
             </div>  
         )
     }

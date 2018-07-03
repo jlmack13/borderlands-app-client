@@ -1,6 +1,6 @@
 .add-loot {
     padding: 2%;
-    background-color: thistle;
+    background-color: lightgray;
     font-family: 'Roboto';
 }
 
@@ -10,7 +10,7 @@
 
 .toggle-add-loot-btn {
     padding: 1% 2%;
-    background-color: teal;
+    background-color: #f2a828;
     border-radius: 2px;
     text-transform: uppercase;
     font: bold 12px 'Roboto';

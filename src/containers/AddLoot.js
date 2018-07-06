@@ -1,41 +1,24 @@
 import React,  { Component } from 'react';
 import { connect } from 'react-redux';
+import { updateLootFormData } from '../actions/lootForm';
+import { createLoot } from '../actions/loot';
 import './AddLoot.css'
 
 class AddLoot extends Component {
-    // constructor(props) {
-    //     super(props);
-
-    //     this.state = {
-    //         showForm: false,
-    //         name: '',
-    //         item_type: '',
-    //         manufacturer: '',
-    //         location: '',
-    //         drop: ''
-    //     }
-    // }
 
     //Handle On Change Method
     handleChange = event => {
         const { name, value } = event.target;
-        // this.setState({
-        //     [name]: value
-        // })
+        const currentLootFormData = Object.assign({}, this.props.lootFormData, { 
+            [name]: value
+        })
+        this.props.updateLootFormData(currentLootFormData)
     }
 
     //Handle on Submit Method
     handleOnSubmit = event => {
         event.preventDefault();
-        const loot = this.state;
-        this.props.addLoot(loot);
-        // this.setState({
-        //     name: '',
-        //     item_type: '',
-        //     manufacturer: '',
-        //     location: '',
-        //     drop: ''
-        // })
+        this.props.createLoot(this.props.lootFormData)
     }
 
     //Toggle Form for Adding New Loot
@@ -115,4 +98,7 @@ const mapStateToProps = state => {
         lootFormData: state.lootFormData
     }
 }
-export default connect(mapStateToProps)(AddLoot);
+export default connect(mapStateToProps, {
+    updateLootFormData,
+    createLoot
+})(AddLoot);

@@ -26,7 +26,7 @@ class App extends Component {
             <Route exact path="/storymode" component={StoryMode} />
           </div>
         </Router>
-        <LootList  />
+        
       </div>
     );
   }

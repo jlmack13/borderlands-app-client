@@ -26,6 +26,15 @@ export const getLoot = () => {
     }
 }
 
+export const getStoryLoot = () => {
+    return dispatch => {
+        return fetch(`${API_URL}storymode`)
+            .then(response => response.json())
+            .then(loot => dispatch(setLoot(loot)))
+            .catch(error => console.log(error))
+    }
+}
+
 export const createLoot = loot => {
     return dispatch => {
         return  fetch(`${API_URL}loots`, {

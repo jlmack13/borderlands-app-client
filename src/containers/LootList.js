@@ -12,22 +12,6 @@ class LootList extends Component {
     this.props.getLoot()
   }
 
-  // addLoot = loot => {
-  //   const request = {
-  //     method: 'POST',
-  //     body: JSON.stringify(loot),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     }
-  //   }
-  //   return (
-      
-  //     // .then(loot => this.setState({
-  //     //     loot: this.state.loot.concat(loot)
-  //     // }))
-  //   );
-  
-
   render() {
     return (
       <div className="loot-container">

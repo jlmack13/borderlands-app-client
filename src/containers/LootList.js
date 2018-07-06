@@ -1,34 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Loot from '../components/Loot';
+import { getLoot } from '../actions/loot';
 import './LootList.css';
 import AddLoot from './AddLoot';
-
-const API_URL = process.env.REACT_APP_API_URL;
 
 
 class LootList extends Component {
 
   componentDidMount() {
-    
+    this.props.getLoot()
   }
 
-  addLoot = loot => {
-    const request = {
-      method: 'POST',
-      body: JSON.stringify(loot),
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    }
-    return (
-      fetch(`${API_URL}loots`, request)
-      .then(response => response.json())
-      // .then(loot => this.setState({
-      //     loot: this.state.loot.concat(loot)
-      // }))
-    );
-  }
+  // addLoot = loot => {
+  //   const request = {
+  //     method: 'POST',
+  //     body: JSON.stringify(loot),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     }
+  //   }
+  //   return (
+      
+  //     // .then(loot => this.setState({
+  //     //     loot: this.state.loot.concat(loot)
+  //     // }))
+  //   );
+  
 
   render() {
     return (
@@ -61,4 +59,4 @@ const mapStateToProps = (state) => {
  })
 }
 
-export default connect(mapStateToProps)(LootList);
+export default connect(mapStateToProps, { getLoot })(LootList);

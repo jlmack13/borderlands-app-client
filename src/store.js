@@ -4,24 +4,16 @@ import {
     combineReducers
 } from 'redux';
 import thunk from 'redux-thunk';
-
-const lootReducer = (state = [], action) => {
-    switch(action.type) {
-        case 'GET_LOOT_SUCCESS':
-            return action.loot
-        default: 
-            return state;
-    }
-}
+import loot from './reducers/loot';
 
 const reducers = combineReducers({
-    loot: lootReducer
+    loot
 });
 
 const middleware = [thunk];
 
 export default createStore(
-    reducers, 
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    applyMiddleware(...middleware)
 );

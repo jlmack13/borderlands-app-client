@@ -2,6 +2,8 @@ import React,  { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateLootFormData } from '../actions/lootForm';
 import { createLoot } from '../actions/loot';
+import { toggleLootForm } from '../actions/lootForm';
+
 import './AddLoot.css'
 
 class AddLoot extends Component {
@@ -22,19 +24,19 @@ class AddLoot extends Component {
     }
 
     //Toggle Form for Adding New Loot
-    // toggleAddLoot = () => {
-    //     this.state.showForm === false ? this.setState({showForm: true}) : this.setState({showForm: false});
-    // }
+     toggleAddLoot = () => {
+        this.props.toggleLootForm()
+     }
 
     
     render() {
-        const { name, item_type, manufacturer, location, drop } = this.props.lootFormData;
+        const { name, item_type, manufacturer, location, drop, show } = this.props.lootFormData;
         return (
             <div className="add-loot">
-                {/* <a className="toggle-add-loot-btn" onClick={this.toggleAddLoot}>{ this.state.showForm === true ? "Hide Add Loot Form" : "Show Add Loot Form" }</a> */}
-                {/* { this.state.showForm ?  */}
+                <a className="toggle-add-loot-btn" onClick={this.toggleAddLoot}>{ show ? "Hide Add Loot Form" : "Show Add Loot Form" }</a>
+                { show ?
                     <form className="add-loot-form" onSubmit={this.handleOnSubmit}>
-                        <h1>Add Loot</h1>
+                        <br />
                         {/* Name */}
                         <label htmlFor="name">Name:</label>
                         <input 
@@ -87,7 +89,7 @@ class AddLoot extends Component {
 
                         <button>Add Loot</button>
                     </form>
-                {/* : null}  */}
+                 : null}
             </div>
         )
     }
@@ -100,5 +102,6 @@ const mapStateToProps = state => {
 }
 export default connect(mapStateToProps, {
     updateLootFormData,
-    createLoot
+    createLoot,
+    toggleLootForm
 })(AddLoot);

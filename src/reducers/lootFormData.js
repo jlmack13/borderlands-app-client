@@ -3,7 +3,8 @@ const initialState = {
     item_type: '',
     manufacturer: '',
     location: '',
-    drop: ''
+    drop: '',
+    show: false
 }
 
 export default (state = initialState, action) => {
@@ -13,6 +14,16 @@ export default (state = initialState, action) => {
             return action.lootFormData;
         case 'RESET_LOOT_FORM':
             return initialState;
+        case 'TOGGLE_LOOT_FORM':
+            if (state.show) {
+                return Object.assign({}, state, {
+                    show: false
+                })
+            } else {
+               return Object.assign({}, state, {
+                   show: true
+               })
+            }
         default: 
             return state;
     }

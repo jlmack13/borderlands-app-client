@@ -5,9 +5,11 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import loot from './reducers/loot';
+import lootFormData from './reducers/lootFormData';
 
 const reducers = combineReducers({
-    loot
+    loot,
+    lootFormData
 });
 
 const middleware = [thunk];

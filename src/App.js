@@ -6,6 +6,7 @@ import Nav from './components/header/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import StoryMode from './components/StoryMode';
+import LootList from './containers/LootList';
 
 
 
@@ -25,7 +26,7 @@ class App extends Component {
             <Route exact path="/storymode" component={StoryMode} />
           </div>
         </Router>
-        
+        <LootList  />
       </div>
     );
   }

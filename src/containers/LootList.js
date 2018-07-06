@@ -12,9 +12,11 @@ class LootList extends Component {
     this.props.getLoot()
   }
 
+  
+
   render() {
     return (
-      <div className="loot-container">
+      <div className="loot-container ">
         <AddLoot show={false} />
         <div className="loot-list">
           {this.props.loot.map( loot => 
@@ -40,4 +42,6 @@ const mapStateToProps = (state) => {
  })
 }
 
-export default connect(mapStateToProps, { getLoot })(LootList);
+export default connect(mapStateToProps, { 
+  getLoot
+ })(LootList);

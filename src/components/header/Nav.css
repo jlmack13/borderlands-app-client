@@ -1,6 +1,5 @@
 .nav {
     margin: 0 auto;
-    background-color: #5e5e5e;
 }
 
 .nav-group {
@@ -12,19 +11,11 @@
 
 .nav-group > a {
     text-decoration: none;
-    padding: 2%;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #61B9C8;
-    font: 18px 'Oswald';
-    color: white;
     text-transform: uppercase;
-
-}
-
-.nav-item {
-    margin: 30px;
-    list-style-type: none;
-    padding: 30px;
-    background-color: #61B9C8;
+    padding: 1% 2%;
+    background-color: #f2a828;
+    border-radius: 2px;
+    font: bold 12px 'Roboto';
+    color: white;
+    margin: 1rem;
 }

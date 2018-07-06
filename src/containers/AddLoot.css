@@ -1,7 +1,13 @@
 .add-loot {
     padding: 2%;
-    background-color: lightgray;
     font-family: 'Roboto';
+}
+
+.add-loot form {
+    background-color: rgb(142, 49, 26, 0.8);
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2%;
 }
 
 .add-loot-form label {

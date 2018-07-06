@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("light-grey-terrazzo.png");
 }
 .main-content {
-  background-color: #333536;
+  background: linear-gradient(to right, rgb(242, 168, 40, 0.8), rgb(192, 85, 33, 0.8));
   height: 90%;
 }
 

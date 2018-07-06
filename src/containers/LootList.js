@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Loot from '../components/Loot';
 import './LootList.css';
-import AddLoot from '../components/AddLoot';
+import AddLoot from './AddLoot';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -10,9 +10,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 class LootList extends Component {
 
   componentDidMount() {
-    fetch(`${API_URL}loots`)
-      .then(response => response.json())
-    // .then((loot => this.setState({ loot })));
+    
   }
 
   addLoot = loot => {
@@ -35,7 +33,7 @@ class LootList extends Component {
   render() {
     return (
       <div className="loot-container">
-        {/* <AddLoot addLoot={this.addLoot} /> */}
+        <AddLoot addLoot={this.addLoot} />
         <div className="loot-list">
           {this.props.loot.map( loot => 
               <Loot 

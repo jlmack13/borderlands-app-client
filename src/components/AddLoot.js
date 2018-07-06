@@ -38,9 +38,7 @@ class AddLoot extends Component {
     }
 
     //Toggle Form for Adding New Loot
-    toggleAddLoot = (event) => {
-        //Do I need to prevent default or not?
-        // event.preventDefault();
+    toggleAddLoot = () => {
         this.state.showForm === false ? this.setState({showForm: true}) : this.setState({showForm: false});
     }
 

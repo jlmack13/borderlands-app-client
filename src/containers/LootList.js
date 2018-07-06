@@ -26,9 +26,6 @@ class LootList extends Component {
               location={loot.location} 
               drop={loot.drop} 
               image_url={loot.image_url}
-              story_id={ loot.story_id } 
-              story_quest={ loot.story_quest } 
-              note={ loot.note }
               />
             )}
         </div>

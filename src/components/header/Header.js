@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import './Header.css';
+import claptrap from './large-logo.svg';
 
+    
 
 class Header extends Component {
     toggleFireworks = (e) => {
@@ -16,8 +18,10 @@ class Header extends Component {
                 <div className="before"></div>
                 <div className="after"></div>
                 
+                
                 <h4>A guide to the legendary loot of Borderlands 2</h4>
-                <h1>Borderlands 2 Lootsplosion!!!</h1>
+                <img src={claptrap} height="150px" alt="borderlands 2 app logo" className="logo"/>
+                <h1 className="alt-logo">Borderlands 2 Lootsplosion!!!</h1>
                 <Nav />
 
             </div>

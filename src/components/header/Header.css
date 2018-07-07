@@ -4,9 +4,13 @@
     background-color: #5e5e5e;
     color: white;
     height: 10%;
-    padding-top: 4%;
+    padding-top: 3%;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.alt-logo {
+    display: none;
 }
 
 .header h1 {
@@ -16,9 +20,13 @@
 }
 
 .header h4 {
-    color: #f2a828;
+    color: #F9C873;
     font-size: 1.5rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Roboto';
+    background-color: ghostwhite;
+    padding: 1%;
+    margin-top: 0;
+    margin-bottom: 4%;
 }
 
 /*Media Queries*/
@@ -39,32 +47,12 @@
         font-size: 3rem;
     }
 }
-
-/*CSS Shake Animation*/
-.header h1:hover {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
-
-@keyframes shake {
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
+@media only screen and (max-width: 720px) {
+    .logo {
+        display: none;
     }
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
+    .alt-logo {
+        display: block;
     }
 }
 

@@ -1,6 +1,8 @@
 .story-mode h1 {
     margin: 0 auto;
-    color: white;
     text-transform: uppercase;
-    padding-top: 25px;
+    padding: 1%;
+    color: #55D2F2;
+    font-size: 3rem;
+    background-color: ghostwhite;
 }

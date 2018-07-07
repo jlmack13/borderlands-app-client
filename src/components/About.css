@@ -1,18 +1,23 @@
-
+.about-page {
+    background: linear-gradient(to right, rgba(249, 200, 115, 0.8), rgba(192, 85, 33, 0.8));
+    padding-top: 2%;
+}
 .about-page h1, h2, h3 {
     color: #f2a828;
     text-transform: uppercase;
     font-weight: bold;
 }
 .about-content h1 {
-    color: #8E311A;
+    color: #55D2F2;
+    font-size: 3rem;
 }
 .about-content {
     width: 50%;
     margin: 0 auto;
     font-family: 'Roboto';
     text-align: left;
-
+    background-color: ghostwhite;
+    padding: 1% 2%;
 }
 
 .about-content h1 {

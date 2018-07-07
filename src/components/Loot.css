@@ -10,9 +10,9 @@
 }
 
 .loot:hover {
-    -moz-box-shadow: inset 0 0 50px #f2a828;
-    -webkit-box-shadow: inset 0 0 50px #f2a828;
-    box-shadow: inset 0 0 50px #f2a828;
+    -moz-box-shadow: inset 0 0 50px #55D2F2;
+    -webkit-box-shadow: inset 0 0 50px #55D2F2;
+    box-shadow: inset 0 0 50px #55D2F2;
 }
 
 .loot h2 {

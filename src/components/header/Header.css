@@ -21,6 +21,25 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/*Media Queries*/
+@media only screen and (max-width: 1340px) {
+    .header h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+}
+
 /*CSS Shake Animation*/
 .header h1:hover {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;

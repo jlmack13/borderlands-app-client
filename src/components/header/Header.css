@@ -17,6 +17,7 @@
     margin-top: 0px;
     font-size: 6rem;
     font-weight: bold;  
+    cursor: default;
 }
 
 .header h4 {
@@ -27,6 +28,10 @@
     padding: 1%;
     margin-top: 0;
     margin-bottom: 4%;
+    cursor: default;
+}
+.header img {
+    cursor: default;
 }
 
 /*Media Queries*/

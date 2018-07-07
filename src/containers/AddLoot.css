@@ -8,10 +8,13 @@
 .add-loot form {
     padding: 4% 2%;
     border-radius: 5px;
-    margin: 2%;
+    margin: 0 auto;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
 }
 
 .add-loot h2 {
@@ -49,4 +52,15 @@
     font: bold 12px 'Roboto';
     cursor: pointer;
     color: white;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 560px) {
+    .toggle-add-loot-btn {
+        padding: 0;
+        background: none;
+        margin: 0 auto;
+        font: bold 14px 'Roboto';
+    }
+
 }

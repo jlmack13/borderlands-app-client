@@ -12,7 +12,7 @@ class Header extends Component {
     }
     render() {
         return (
-            <div className="header pyro" onClick={this.toggleFireworks}>
+            <div className="header pyro"  title="Click to Toggle Fireworks" onClick={this.toggleFireworks}>
                 <div className="before"></div>
                 <div className="after"></div>
                 

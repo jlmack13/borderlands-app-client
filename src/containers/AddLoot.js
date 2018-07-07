@@ -35,7 +35,9 @@ class AddLoot extends Component {
             <div className="add-loot">
                 <a className="toggle-add-loot-btn" onClick={this.toggleAddLoot}>{ show ? "Hide Add Loot Form" : "Show Add Loot Form" }</a>
                 { show ?
+                    
                     <form className="add-loot-form" onSubmit={this.handleOnSubmit}>
+                        <h2>Add New Loot</h2>
                         <br />
                         {/* Name */}
                         <label htmlFor="name">Name:</label>

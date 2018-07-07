@@ -37,7 +37,7 @@ class AddLoot extends Component {
                 { show ?
                     
                     <form className="add-loot-form" onSubmit={this.handleOnSubmit}>
-                        <h2>Add New Loot</h2>
+                        <h2>Add New Loot:</h2>
                         <br />
                         {/* Name */}
                         <label htmlFor="name">Name:</label>

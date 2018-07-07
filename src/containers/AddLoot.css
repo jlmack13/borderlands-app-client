@@ -14,6 +14,11 @@
     color: white;
 }
 
+.add-loot h2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
 .add-loot input {
     -webkit-appearance: none;
     border: none;
@@ -43,4 +48,5 @@
     text-transform: uppercase;
     font: bold 12px 'Roboto';
     cursor: pointer;
+    color: white;
 }

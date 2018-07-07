@@ -1,0 +1,24 @@
+
+.about-page h1, h2, h3 {
+    color: #f2a828;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-content h1 {
+    color: #8E311A;
+}
+.about-content {
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    text-align: left;
+
+}
+
+.about-content h1 {
+    text-align: center;
+}
+
+.about-content li {
+    list-style-type: none;
+}

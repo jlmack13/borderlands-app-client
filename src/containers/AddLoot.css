@@ -1,17 +1,40 @@
 .add-loot {
     padding: 2%;
     font-family: 'Roboto';
+    font-size: 14px;
 }
 
 .add-loot form {
-    background-color: rgb(142, 49, 26, 0.8);
-    padding: 2%;
-    border-radius: 10px;
+    padding: 4% 2%;
+    border-radius: 5px;
     margin: 2%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2B2A4D;
+    background-color: rgba(64, 72, 114, 0.8);
+    border: 6px solid rgba(139, 202, 208, 0.8);
+}
+
+.add-loot input {
+    -webkit-appearance: none;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.add-loot button {
+    -webkit-appearance: none;
+    border: none;
+    padding: .5% 1%;
+    margin: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #6CBCBD;
+    color: white;
 }
 
 .add-loot-form label {
-    margin: 10px;
+    margin: 5px;
 }
 
 .toggle-add-loot-btn {

@@ -43,6 +43,15 @@
     text-align: center;
 }
 
+.heart {
+    color: rgb(206, 26, 116);
+
+}
+
+.likes {
+    font-size: 2rem;
+}
+
 /*Media Queries*/
 @media only screen and (max-width: 1080px) {
     .loot {

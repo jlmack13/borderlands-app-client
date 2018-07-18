@@ -17,6 +17,7 @@ class StoryList extends Component {
         <div className="loot-list">
           {this.props.loot.map( loot => 
               <Loot 
+              id={loot.id}
               key={loot.id} 
               name={loot.name} 
               item_type={loot.item_type} 
@@ -27,6 +28,7 @@ class StoryList extends Component {
               story_id={ loot.story_id } 
               story_quest={ loot.story_quest } 
               note={ loot.note }
+              initial_likes={loot.likes}
               />
             )}
         </div>

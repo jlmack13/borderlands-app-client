@@ -20,6 +20,7 @@ class LootList extends Component {
         <div className="loot-list">
           {this.props.loot.map( loot => 
               <Loot 
+              id={loot.id}
               key={loot.id} 
               name={loot.name} 
               item_type={loot.item_type} 
@@ -27,7 +28,7 @@ class LootList extends Component {
               location={loot.location} 
               drop={loot.drop} 
               image_url={loot.image_url}
-              like={loot.likes}
+              initial_likes={loot.likes}
               />
             )}
         </div>

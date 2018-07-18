@@ -11,7 +11,6 @@ class LootList extends Component {
   componentDidMount() {
     this.props.getLoot()
   }
-
   
 
   render() {
@@ -28,6 +27,7 @@ class LootList extends Component {
               location={loot.location} 
               drop={loot.drop} 
               image_url={loot.image_url}
+              like={loot.likes}
               />
             )}
         </div>

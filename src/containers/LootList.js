@@ -17,7 +17,7 @@ class LootList extends Component {
   render() {
     return (
       <div className="loot-container ">
-        <AddLoot show={false} />
+        {/* <AddLoot show={false} /> */}
         <div className="loot-list">
           {this.props.loot.map( loot => 
               <Loot 

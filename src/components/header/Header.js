@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import './Header.css';
-import claptrap from './large-logo.svg';
+import claptrap from './large-logo.png';
 
     
 

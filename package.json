@@ -2,11 +2,6 @@
   "name": "borderlands-app-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/api": {
-      "target": "https://borderlands-2-lootsplosion-api.herokuapp.com"
-    }
-  },
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
